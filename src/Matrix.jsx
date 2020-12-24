@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import MATRIX_FRAMES from './data/matrix';
 import { useDynamicTransition } from './hooks';
 
@@ -24,8 +24,6 @@ export default function Matrix() {
     const increment = Number(event.target.value);
     setIncrement(increment < minimumIncrement ? minimumIncrement : increment);
   };
-
-  console.log('delay', delay, 'increment', increment);
 
   return (
     <div className="Matrix">
